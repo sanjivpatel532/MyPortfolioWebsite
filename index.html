@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore my skills, projects, and contact information.">
+    <meta name="author" content="Dev Patel">
+    <meta name="keywords" content="Dev Patel, Portfolio, Web Development, Programming, Projects">
+    <title>Sanjiv Portfolio</title>
+
+    <!-- Canonical Link -->
+    <link rel="canonical" href="https://sanjivpatel.github.io/MyPortfolioWebsite/">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/images/my_image_1.jpg" type="image/x-icon">
+
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="Dev Portfolio">
+    <meta property="og:description" content="Explore my skills, projects, and contact information.">
+    <meta property="og:image" content="https://sanjivpatel.github.io/MyPortfolioWebsite/assets/images/og-image.png">
+    <meta property="og:url" content="https://sanjivpatel.github.io/MyPortfolioWebsite/">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Metadata -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Sanjiv Portfolio">
+    <meta name="twitter:description" content="Explore my skills, projects, and contact information.">
+    <meta name="twitter:image" content="https://sanjivpatel.github.io/MyPortfolioWebsite/assets/images/og-image.png">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/laptop-media-queries.css">
+    <link rel="stylesheet" href="css/tablet-media-queries.css">
+    <link rel="stylesheet" href="css/mobile-media-queries.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+
+</head>
+
+<button id="scrollToTopBtn" title="Go to top"
+    style="display:none;position:fixed;bottom:40px;right:40px;z-index:99;font-size:18px;padding:10px 15px;border:none;border-radius:50%;background:#333;color:#fff;cursor:pointer;">
+    <i class="fa fa-arrow-up"></i>
+</button>
+
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<body>
+    <div id="loader"
+        style="position:fixed;top:0;left:0;width:100vw;height:100vh;background:#fff;z-index:9999;display:flex;align-items:center;justify-content:center;">
+        <i class="fa fa-spinner fa-spin" style="font-size:3rem;color:#333;"></i>
+    </div>
+    <!-- Top Navigation Bar -->
+    <nav class="flex" aria-label="Main Navigation">
+        <div class="container main-nav flex">
+            <!-- Logo Section -->
+            <div class="name-logo">
+                <!-- SanjivPatel Logo -->
+                <h1>SANJIV PATEL</h1>
+            </div>
+            <!-- Navigation Links -->
+            <div class="nav-links">
+                <ul class="flex">
+                    <!-- Home Link -->
+                    <li>
+                        <a href="#home-page" class="hover-link" aria-label="Navigate to Home Section">Home</a>
+                    </li>
+                    <!-- Education Link -->
+                    <li>
+                        <a href="#education-page" class="hover-link"
+                            aria-label="Navigate to Education Section">Education</a>
+                    </li>
+                    <!-- Certifications Link -->
+                    <li>
+                        <a href="#certifications-page" class="hover-link"
+                            aria-label="Navigate to Certifications Section">Certifications</a>
+                    </li>
+                    <!-- Projects Link -->
+                    <!--<li>
+                        <a href="#projects-page" class="hover-link"
+                            aria-label="Navigate to Projects Section">Projects</a>
+                    </li> -->
+                    <!-- Skills Link -->
+                    <li>
+                        <a href="#skills-page" class="hover-link" aria-label="Navigate to Skills Section">Skills</a>
+                    </li>
+                    <!-- Contact Me Link -->
+                    <li>
+                        <a href="#contact-me-page" class="hover-link"
+                            aria-label="Navigate to Contact Me Section">Contact Me</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Body -->
+    <main class="main-body flex">
+
+        <!-- Home Page Section -->
+        <section class="home-page flex" id="home-page" data-aos>
+
+            <!-- Profile Image Section -->
+            <div class="my-image flex">
+                <!-- Developer's Photo -->
+                <img class="img-my" src="assets/images/my_image_1.jpg" alt="A  photo of Sanjiv Patel" />
+            </div>
+
+            <!-- Introduction Section -->
+            <div class="my-intro flex">
+                <!-- Greeting and Name -->
+                <h1><span>Sanjiv Patel</span></h1>
+                <!-- Role Description -->
+                <h2>Software Developer / Data Analyst.</h2>
+                <!-- Brief Introduction -->
+                <p>
+                    A Computer Programming and Analysis graduate from Durham College, Oshawa, Ontario 
+                    equipped with a solid foundation in Software application and Web Development  
+                    driven by genuine passion for continuous learning and growth, 
+                    <br>I take pride in leveraging my skills to tackle real-world challenges. 
+                    I thrive on exploring innovative solutions and am deeply motivated to 
+                    contribute meaningfully to impactful projects that make a difference.
+                </p>
+
+                <!-- Social Media Links -->
+                <div class="social-media flex">
+                    <!-- LinkedIn -->
+                    <a href="https://www.linkedin.com/in/sanjiv.patel" target="_blank" class="social-media-logo"
+                        aria-label="LinkedIn Profile (Opens in a new tab)">
+                        <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                    <!-- GitHub -->
+                    <a href="https://github.com/sanjivpatel532" target="_blank" class="social-media-logo"
+                        aria-label="GitHub Profile (Opens in a new tab)">
+                        <i class="fa-brands fa-github" aria-hidden="true"></i>
+                    </a>
+                    <!-- Instagram -->
+                    <a href="https://www.instagram.com/" target="_blank" class="social-media-logo"
+                        aria-label="Instagram Profile (Opens in a new tab)">
+                        <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                    </a>
+                </div>
+
+                <!-- Call-to-Action Buttons -->
+                <div class="intro-buttons flex">
+                    <!-- Hire Me Button -->
+                    <a href="mailto:sanjp219@gmail.com" class="hire-me button" aria-label="Email Sanjiv Patel">Hire
+                        Me</a>
+                    <!-- Download Resume Button -->
+                    <a href="assets/files/Patel_Sanjivkumar_Resume_docx.pdf" download class="download-resume button"
+                        aria-label="Download Sanjiv's Patel's Resume">
+                        Download My Resume
+                    </a>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Education Section -->
+        <section class="education-page flex" id="education-page">
+
+            <!-- Education Details -->
+            <div class="education flex">
+                <!-- Education Title -->
+                <h1> Education </h1>
+                <!-- Program and Institution -->
+                <p class="course-name"><strong>Computer Programming and Analysis</strong></p>
+                <p>Durham College, Oshawa</p>
+                <!-- Link to Program Details -->
+                <a href="https://durhamcollege.ca/programs/computer-programming-analyst-three-year" target="_blank"
+                    aria-label="Learn more about the Computer Programming and Analysis program at Durham College (Opens in a new tab)">Learn
+                    more</a>
+                <!-- Education Duration -->
+                <p class="education-date">January 2021 - May 2024</p>
+                <!-- Course Work Section -->
+                <p class="course-work"><strong>Coursework</strong></p>
+                <!-- Auto-Typed Coursework (Dynamic Content Placeholder) -->
+                <p><span class="course-work-auto-type"></span></p>
+                <!-- Typed.js Script for Dynamic Text -->
+                <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+            </div>
+
+            <!-- Education Icon Section -->
+            <div class="education-image flex">
+                <!-- Decorative Graduation Cap Icon -->
+                <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+            </div>
+
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills-page flex" id="skills-page">
+
+            <!-- Skills Page Content -->
+            <div class="skills-page-content flex">
+                <!-- Skill Type Selector -->
+                <div class="skill-type-selector flex">
+                    <!-- Technical Skills Tab -->
+                    <div id="skill-type-technical" class="skill-type-technical skill-type-selector-active flex">
+                        <h2>Technical Skills</h2>
+                    </div>
+                    <!-- Development Skills Tab -->
+                    <div id="skill-type-development" class="skill-type-development flex">
+                        <h2>Development Skills</h2>
+                    </div>
+                    <!-- Soft Skills Tab -->
+                    <div id="skill-type-soft" class="skill-type-soft flex">
+                        <h2>Soft Skills</h2>
+                    </div>
+                </div>
+
+                <!-- Skills Display Area -->
+                <div class="skills">
+                    <!-- Technical Skills Section -->
+                    <div id="technical-skills" class="technical-skills display-skills">
+                        <!-- Programming Languages and Web Development -->
+                        <div class="programming-languages-and-web-development flex box-layout">
+                            <p><strong>Programming Languages and Web Development</strong></p>
+                            <ul class="flex">
+                                <li><i class="fa-brands fa-java" aria-hidden="true"></i> Java</li>
+                                <li><i class="fa-brands fa-js" aria-hidden="true"></i> JavaScript</li>
+                                <li><i class="fa-brands fa-php" aria-hidden="true"></i> PHP</li>
+                                <li><i class="fa-brands fa-html5" aria-hidden="true"></i> HTML5</li>
+                                <li><i class="fa-brands fa-css3-alt" aria-hidden="true"></i> CSS3</li>
+                                <li>Bootstrap</li>
+                                <li>.Net</li>
+                            </ul>
+                        </div>
+                        <!-- Databases and Server Management -->
+                        <div class="databases-and-server-management flex box-layout">
+                            <p><strong>Databases and Server Management</strong></p>
+                            <ul class="flex">
+                                <li>MySQL</li>
+                                <li>PostgreSQL</li>
+                                <li>SQL Server Management Studio</li>
+                            </ul>
+                        </div>
+                        <!-- Development Tools and Testing Frameworks -->
+                        <div class="development-tools-and-testing-frameworks flex box-layout">
+                            <p><strong>Development Tools and Testing Frameworks</strong></p>
+                            <ul class="flex">
+                                <li><i class="fa-brands fa-git-alt" aria-hidden="true"></i> Git</li>
+                                <li><i class="fa-brands fa-github" aria-hidden="true"></i> GitHub</li>
+                                <li>Android Studio</li>
+                                <li>Visual Studio Code</li>
+                                <li>Visual Studio</li>
+                                <li>Selenium WebDriver</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Development Skills Section -->
+                    <div id="development-skills" class="development-skills">
+                        <!-- Software Development -->
+                        <div class="software-development flex box-layout">
+                            <p><strong>Application Software Development</strong></p>
+                            <ul class="flex">
+                                <li>FLUTTER & DART Programming</li>
+                                <li> C#, C+, OOP  </li>
+                                <li>Software Design Principles</li>
+                                <li>Software Development Lifecycle (SDLC)</li>
+                            </ul>
+                        </div>
+                        <!-- Testing and Debugging -->
+                        <div class="testing-and-debugging flex box-layout">
+                            <p><strong>Testing and Debugging</strong></p>
+                            <ul class="flex">
+                                <li>Automated Testing</li>
+                                <li>Functional Testing</li>
+                            </ul>
+                        </div>
+                        <!-- Problem Solving -->
+                        <div class="problem-solving flex box-layout">
+                            <p><strong>Problem Solving</strong></p>
+                            <ul class="flex">
+                                <li>Data Structures and Algorithms</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Soft Skills Section -->
+                    <div id="soft-skills" class="soft-skills">
+                        <!-- Communication and Teamwork -->
+                        <div class="communication-and-teamwork flex box-layout">
+                            <p><strong>Communication and Teamwork</strong></p>
+                            <ul class="flex">
+                                <li>Effective Team Collaboration</li>
+                                <li>Communication</li>
+                                <li>Adaptability</li>
+                            </ul>
+                        </div>
+                        <!-- Critical Thinking and Creativity -->
+                        <div class="testing-and-debugging flex box-layout">
+                            <p><strong>Critical Thinking & Creativity</strong></p>
+                            <ul class="flex">
+                                <li>Strong Analytical Skills</li>
+                                <li>Creativity</li>
+                                <li>Innovation</li>
+                            </ul>
+                        </div>
+                        <!-- Time and Task Management -->
+                        <div class="problem-solving flex box-layout">
+                            <p><strong>Time and Task Management</strong></p>
+                            <ul class="flex">
+                                <li>Time Management</li>
+                                <li>Exceptional Organizational Skills</li>
+                                <li>Ability and Dedication to Adapt to New Technologies.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="certifications-page flex" id="certifications-page">
+            <div class="certification-page-content flex">
+                <h2>Certifications</h2>
+                <!-- Certificates Container -->
+                <div class="certificates-container flex">
+                    <!-- Certificate - 1 -->
+                    <div class="certificate">
+                        <div class="certificate-header">
+                            <img src="assets/images/FLUTTER_CERTIFICATE.jpg"
+                                alt="Programming Concepts for Python certificate image" id="certificate-image">
+                        </div>
+                        <div class="certificate-content flex">
+                            <h3 id="certificate-name">FLUTTER & DART - The Complete Guide [2025 Edition]</h3>
+                            <p class="certificate-discription">
+                                UDEMY Learning Certificate
+                            </p>
+                            <a href="https://www.udemy.com/certificate/UC-a1ea84e8-36dd-475d-9183-f343c63a8c67/"
+                                target="_blank">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- View More Certificates -->
+                <div class="view-more-certificates flex hide">
+                    <a href="#" class="view-more-button button">View More</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects-page flex" id="projects-page">
+            <div class="projects-page-content flex">
+                <h2>Past Projects</h2>
+                <!-- Projects Container -->
+                <div class="projects-container flex">
+                    <!-- Project - 1 -->
+                    <div class="project">
+                        <div class="project-header">
+                            <img src="assets/images/Screenshot_Sanjiv_Portfolio.png" alt="Portfolio Website project image"
+                                id="project-image">
+                        </div>
+                        <div class="project-content flex">
+                            <h3 id="project-name">
+                                <a href="https://sanjivpatel532.github.io/index.html" target="_blank">
+                                    Portfolio Website
+                                </a>
+                            </h3>
+                            <p class="project-discription">
+                                A personal portfolio website featuring effective display about my work including my other upcoming project. Also shows my skills,
+                                and experience. Built using HTML, CSS, and JavaScript.
+                            </p>
+                            <a href="https://sanjivpatel532.github.io/index.html"></a>
+                        </div>
+                    </div>
+                    <!-- Project - 2 -->
+                    <div class="project">
+                        <div class="project-header">
+                            <img src="assets/images/coming-soon.gif" alt="Application project image"
+                                id="project-image">
+                        </div>
+                        <div class="project-content flex">
+                            <h3 id="project-name">Under Construction</h3>
+                            <p class="project-discription">
+                                An application demonstrating using C# and Windows Forms, Operations.
+                                An application demonstrating using C# and Windows Forms, Operations
+                                An application demonstrating using C# and Windows Forms, Operations
+                                An application demonstrating using C# and Windows Forms.
+                            </p>
+                            <!--TBD-->
+                        </div>
+                    </div>
+                </div>
+                <!-- View More Projects -->
+                <div class="view-more-projects flex hide">
+                    <a href="#" class="view-more-button button">View More</a>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="contact-me-page flex" id="contact-me-page">
+
+            <!-- Contact Form -->
+            <form id="contact-me-form" class="contact-me-form flex" action="https://api.web3forms.com/submit"
+                method="POST" novalidate>
+                <h2>Send Me A Message</h2>
+
+                <!-- Message Box (will appear if the form is incomplete) -->
+                <div id="message-box" class="message-box flex hide">
+                    <strong>Please fill in all fields.</strong>
+                </div>
+
+                <div class="inputs flex">
+                    <!-- Hidden Input for Web3 Forms API Key -->
+                    <input type="hidden" name="access_key" value="6287f66f-7b8f-4b2d-bd38-115bb234cc8f">
+
+                    <!-- Name Input -->
+                    <input type="text" name="name" id="name" placeholder="Your Name" class="contact-inputs" required
+                        aria-label="Your Name">
+
+                    <!-- Email Input -->
+                    <input type="email" name="email" id="email" placeholder="Your Email" class="contact-inputs" required
+                        aria-label="Your Email">
+
+                    <!-- Phone Number Input -->
+                    <input type="tel" name="tel" id="tel" placeholder="Your Phone Number" class="contact-inputs"
+                        required aria-label="Your Phone Number">
+
+                    <!-- Company Name Input -->
+                    <input type="text" name="company" id="company" placeholder="Your Company Name"
+                        class="contact-inputs" aria-label="Your Company Name">
+
+                    <!-- Message Textarea -->
+                    <textarea name="message" id="message" placeholder="Your Message" class="contact-inputs"
+                        aria-label="Your Message"></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="button">Submit</button>
+            </form>
+
+            <!-- Contact Information Section -->
+            <div class="contact-info flex">
+                <h2>Contact Information</h2>
+
+                <!-- Location -->
+                <p><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Toronto, Ontario</p>
+
+                <!-- Phone Number -->
+                <p><i class="fa-solid fa-phone" aria-hidden="true"></i> 249-889-9625</p>
+
+                <!-- Email Address -->
+                <p><i class="fa-solid fa-envelope" aria-hidden="true"></i> sanjp219@gmail.com</p>
+
+                <!-- Social Media Links -->
+                <div class="social-media flex contact-page-sm">
+                    <a href="https://www.linkedin.com/in/-sanjiv-patel/" target="_blank" class="social-media-logo"
+                        aria-label="LinkedIn Profile">
+                        <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://github.com/sanjivpatel532" target="_blank" class="social-media-logo"
+                        aria-label="GitHub Profile">
+                        <i class="fa-brands fa-github" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" class="social-media-logo"
+                        aria-label="Instagram Profile">
+                        <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="footer-container flex">
+            <p>&copy; <span id="footer-year"></span> Sanjiv Patel. All rights reserved.</p>
+        </footer>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>

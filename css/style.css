@@ -1,0 +1,628 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*---------------------------------------- Global Variables ---------------------------------------- */
+:root {
+    --primary-text-color: #ffffff;
+    --secondary-text-color: #79b6f7;
+    --primary-background-color: #5f5c5a;
+    --secondary-background-color: #5396dd;
+}
+
+
+/*---------------------------------------- Global styles ---------------------------------------- */
+
+body {
+    font-family: "Poiret One", serif;
+    background-color: var(--primary-background-color);
+    color: var(--primary-text-color);
+    align-items: center;
+}
+
+.main-body {
+    flex-direction: column;
+}
+
+h1 {
+    font-family: "Roboto", serif;
+    letter-spacing: 2px;
+    font-size: 3rem;
+}
+
+h2 {
+    font-family: "Roboto", serif;
+    font-size: 2rem;
+}
+
+h3 {
+    font-family: "Roboto", serif;
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1.5rem;
+    color: var(--primary-text-color);
+    line-height: 2rem;
+    letter-spacing: 1px;
+}
+
+a {
+    text-decoration: none;
+    display: inline block;
+}
+
+ul {
+    list-style: none;
+    font-family: "Roboto", serif;
+    font-size: 1.5rem;
+}
+
+/*---------------------------------------- Utility Classes ---------------------------------------- */
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.button {
+    font-family: "Roboto", serif;
+    color: var(--secondary-text-color);
+    font-size: 1.25rem;
+    text-align: center;
+    font-weight: 700;
+    height: 50px;
+    border: solid var(--secondary-background-color);
+    border-radius: 20px;
+    padding: 10px 20px;
+    transition: 0.3s ease-out;
+}
+
+.button:hover {
+    transform: scale(1.2);
+    background-color: var(--secondary-background-color);
+    color: var(--primary-background-color);
+    box-shadow: 0px 0px 20px var(--secondary-background-color);
+}
+
+.hide {
+    display: none;
+}
+
+/*---------------------------------------- Nav Bar ---------------------------------------- */
+
+body nav {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    box-shadow: 0px 1px 20px var(--secondary-background-color);
+    background-color: var(--primary-background-color);
+    justify-content: center;
+    z-index: 1;
+}
+
+.main-nav {
+    width: 1280px;
+    height: 100px;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.name-logo {
+    letter-spacing: 5px;
+    transition: 0.2 ease-out;
+}
+
+.name-logo:hover {
+    color: var(--secondary-text-color);
+    cursor: default;
+    text-shadow: 0px 0px 20px var(--secondary-text-color);
+}
+
+.nav-links {
+    overflow: hidden;
+}
+
+.nav-links ul {
+    justify-content: end;
+    gap: 50px;
+}
+
+.hover-link {
+    color: var(--primary-text-color);
+    transition: 0.3s ease-out;
+}
+
+.hover-link:hover {
+    color: var(--secondary-text-color);
+    text-shadow: 0px 0px 10px var(--secondary-text-color);
+}
+
+/*---------------------------------------- Home Page ---------------------------------------- */
+
+.home-page {
+    width: 1280px;
+    height: calc(100vh - 100px);
+    min-height: 800px;
+    justify-content: center;
+    margin-top: 100px;
+    padding: 30px;
+    gap: 40px;
+}
+
+.my-image {
+    width: 40%;
+    justify-content: center;
+}
+
+.my-image img {
+    width: 100%;
+}
+
+.my-intro {
+    width: 60%;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.my-intro h1 {
+    font-size: 4.5rem;
+}
+
+.my-intro h2 {
+    margin-top: 10px;
+}
+
+.my-intro p {
+    margin-top: 30px;
+}
+
+.my-intro h1 span {
+    color: var(--secondary-text-color);
+}
+
+.social-media {
+    flex-direction: row;
+    width: 100%;
+    height: 60px;
+    margin-top: 30px;
+}
+
+.social-media-logo {
+    color: var(--secondary-background-color);
+    font-size: 40px;
+    transition: 0.3s ease-out;
+    margin-right: 15px;
+}
+
+.social-media-logo:hover {
+    transform: scale(1.2);
+    text-shadow: 0px 0px 20px var(--secondary-background-color);
+}
+
+.intro-buttons {
+    margin-top: 30px;
+    height: 70px;
+    gap: 30px;
+}
+
+/*---------------------------------------- Education Page ---------------------------------------- */
+
+.education-page {
+    width: 1280px;
+    height: calc(100vh - 100px);
+    min-height: 800px;
+    justify-content: center;
+    padding: 30px;
+    padding-top: 100px;
+    gap: 40px;
+}
+
+.education {
+    width: 60%;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+}
+
+.education-image {
+    width: 40%;
+}
+
+.education h1 {
+    font-size: 4rem;
+    color: var(--secondary-text-color);
+    margin-bottom: 40px;
+}
+
+.course-name {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.education a {
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: var(--secondary-text-color);
+}
+
+.education-date {
+    margin-top: 30px;
+}
+
+.course-work {
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+.education-image {
+    justify-content: center;
+}
+
+.education-image i {
+    font-size: 12rem;
+    color: var(--secondary-text-color);
+}
+
+/*---------------------------------------- Skills Page ---------------------------------------- */
+
+.skills-page {
+    width: 1280px;
+    height: calc(100vh - 100px);
+    min-height: 800px;
+    justify-content: center;
+    padding: 30px;
+    padding-top: 100px;
+    gap: 40px;
+}
+
+.skills-page-content {
+    width: 100%;
+    flex-direction: column;
+}
+
+.skill-type-selector {
+    width: 100%;
+    height: 70px;
+    justify-content: space-between;
+}
+
+.skill-type-technical,
+.skill-type-development,
+.skill-type-soft {
+    width: 30%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.skill-type-technical:hover,
+.skill-type-development:hover,
+.skill-type-soft:hover {
+    cursor: pointer;
+}
+
+.skill-type-selector-active {
+    background-color: var(--secondary-background-color);
+    color: var(--primary-background-color);
+}
+
+.skills {
+    width: 100%;
+    height: calc(100% - 70px);
+}
+
+.technical-skills,
+.development-skills,
+.soft-skills {
+    width: 100%;
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    padding-top: 20px;
+    gap: 20px;
+}
+
+.display-skills {
+    display: flex;
+}
+
+.skills P {
+    font-size: 2rem;
+}
+
+.skills ul {
+    flex-direction: row;
+    font-family: "Poiret One", serif;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.box-layout {
+    flex-direction: column;
+    gap: 30px;
+    border: solid 2px var(--secondary-background-color);
+    border-radius: 10px;
+    padding: 17px;
+}
+
+/*---------------------------------------- Certifications Page ---------------------------------------- */
+
+.certifications-page {
+    width: 1280px;
+    height: calc(100vh - 100px);
+    min-height: 800px;
+    justify-content: center;
+    padding: 30px;
+    padding-top: 100px;
+    gap: 40px;
+}
+
+.certification-page-content {
+    width: 100%;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.certificates-container {
+    height: 100%;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.certification-page-content h2 {
+    font-size: 4rem;
+    color: var(--secondary-text-color);
+    margin: 20px;
+}
+
+.certificate {
+    width: 30%;
+    height: 100%;
+    border-radius: 20px;
+    border: solid 2px var(--secondary-background-color);
+    overflow: hidden;
+}
+
+.certificate-header {
+    width: 100%;
+    height: 40%;
+}
+
+#certificate-image {
+    width: 100%;
+    height: 100%;
+}
+
+.certificate-content {
+    width: 100%;
+    height: 60%;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 10px;
+    gap: 20px;
+    text-align: center;
+}
+
+.certificate-content a {
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: var(--secondary-text-color);
+}
+
+.view-more-certificates {
+    width: 100%;
+    height: 15%;
+    justify-content: center;
+}
+
+.view-more-button {
+    font-size: 1rem;
+    height: 40px;
+    padding: 8px 20px;
+}
+
+.view-more-button:hover {
+    transform: scale(1);
+}
+
+/*---------------------------------------- Projects Page ---------------------------------------- */
+
+.projects-page {
+    width: 1280px;
+    height: calc(100vh - 100px);
+    min-height: 800px;
+    justify-content: center;
+    padding: 30px;
+    padding-top: 100px;
+    gap: 40px;
+}
+
+.projects-page-content {
+    width: 100%;
+    flex-direction: column;
+    gap: 30px;  
+}
+
+.projects-container {
+    height: 100%;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.projects-page-content h2 {
+    font-size: 4rem;
+    color: var(--secondary-text-color);
+    margin: 20px;
+}
+
+.project {
+    width: 100%;
+    display: flex;
+        flex-direction: column;
+        gap:2rem;
+    height: 100%;
+    border-radius: 20px;
+    border: solid 2px var(--secondary-background-color);
+    overflow: hidden;
+}
+
+.project-header {
+    width: 100%;
+    height: 40%;
+}
+
+#project-image {
+    width: 100%;
+    height: 100%;
+}
+
+.project-content {
+    width: 100%;
+    height: 60%;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 10px;
+    gap: 20px;
+    text-align: center;
+}
+
+.project-content a {
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: var(--secondary-text-color);
+}
+
+.view-more-projects {
+    width: 100%;
+    height: 15%;
+    justify-content: center;
+}
+
+.view-more-button {
+    font-size: 1rem;
+    height: 40px;
+    padding: 8px 20px;
+}
+
+.view-more-button:hover {
+    transform: scale(1);
+}
+
+/*---------------------------------------- Contact Me Page ---------------------------------------- */
+
+.contact-me-page {
+    width: 1280px;
+    height: calc(100vh - 100px);
+    min-height: 800px;
+    justify-content: center;
+    padding: 30px;
+    padding-top: 100px;
+}
+
+.contact-me-form {
+    width: 60%;
+    height: 80%;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    gap: 30px;
+    background-color: var(--secondary-background-color);
+    border-radius: 10px 0px 0px 10px;
+    overflow: hidden;
+}
+
+.inputs {
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.contact-inputs {
+    width: 300px;
+    height: 40px;
+    background-color: var(--primary-text-color);
+    outline: none;
+    border: none;
+    padding-left: 30px;
+    border-radius: 10px;
+    font-family: "Roboto", serif;
+}
+
+.inputs textarea {
+    width: 630px;
+    height: 180px;
+    resize: none;
+    padding-top: 15px;
+    font-family: "Roboto", serif;
+}
+
+.contact-me-form button {
+    width: 150px;
+    color: var(--primary-text-color);
+    background-color: var(--secondary-background-color);
+    border-color: var(--primary-text-color);
+}
+
+.contact-me-form button:hover {
+    background-color: var(--primary-text-color);
+    color: var(--secondary-text-color);
+}
+
+.message-box {
+    font-family: "Roboto", serif;
+    width: 630px;
+    height: 30px;
+    color: red;
+    text-align: center;
+    justify-content: center;
+    background-color: var(--primary-text-color);
+    padding-left: 30px;
+    border-radius: 10px;
+}
+
+.contact-info {
+    width: 40%;
+    height: 80%;
+    flex-direction: column;
+    padding-top: 40px;
+    gap: 30px;
+    border: solid 2px var(--secondary-background-color);
+    color: var(--secondary-text-color);
+    border-radius: 0px 10px 10px 0px;
+}
+
+.contact-page-sm {
+    justify-content: space-around;
+    padding: 0px 80px;
+}
+
+.contact-info h2 {
+    margin-bottom: 50px;
+}
+
+.contact-page-sm {
+    margin-top: 50px;
+}
+
+.contact-page-sm .social-media-logo i {
+    color: var(--primary-text-color);
+}
+
+/*---------------------------------------- Footer ---------------------------------------- */
+
+.footer-container {
+    width: 1280px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
