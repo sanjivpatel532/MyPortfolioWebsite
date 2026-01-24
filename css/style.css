@@ -146,8 +146,7 @@ body nav {
 
 .home-page {
     width: 1280px;
-    height: calc(100vh - 100px);
-    min-height: 800px;
+    min-height: calc(100vh - 100px);
     justify-content: center;
     margin-top: 100px;
     padding: 30px;
@@ -215,8 +214,7 @@ body nav {
 
 .education-page {
     width: 1280px;
-    height: calc(100vh - 100px);
-    min-height: 800px;
+    min-height: calc(100vh - 100px);
     justify-content: center;
     padding: 30px;
     padding-top: 100px;
@@ -273,8 +271,7 @@ body nav {
 
 .skills-page {
     width: 1280px;
-    height: calc(100vh - 100px);
-    min-height: 800px;
+    min-height: calc(100vh - 100px);
     justify-content: center;
     padding: 30px;
     padding-top: 100px;
@@ -358,8 +355,7 @@ body nav {
 
 .certifications-page {
     width: 1280px;
-    height: calc(100vh - 100px);
-    min-height: 800px;
+    min-height: calc(100vh - 100px);
     justify-content: center;
     padding: 30px;
     padding-top: 100px;
@@ -438,8 +434,7 @@ body nav {
 
 .projects-page {
     width: 1280px;
-    height: calc(100vh - 100px);
-    min-height: 800px;
+    min-height: calc(100vh - 100px);
     justify-content: center;
     padding: 30px;
     padding-top: 100px;
@@ -521,8 +516,7 @@ body nav {
 
 .contact-me-page {
     width: 1280px;
-    height: calc(100vh - 100px);
-    min-height: 800px;
+    min-height: calc(100vh - 100px);
     justify-content: center;
     padding: 30px;
     padding-top: 100px;
